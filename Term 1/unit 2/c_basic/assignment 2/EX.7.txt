@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int x, product = 1, i;
+    printf("Enter an integer: ");
+    scanf("%d", &x);
+    
+    if (x < 0) {
+        printf("Error: You entered a negative number.\n");
+    } else {
+        for (i = 1; i <= x; i++) {
+            product *= i;
+        }
+        printf("Product = %d\n", product);
+    }
+
+    return 0;
+}
